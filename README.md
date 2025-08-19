@@ -1,109 +1,60 @@
-# Notely - Product Feature Analysis
+# Notely - Product Feature Analysis  
 
+##  Project Background  
+Notely (fictitious product) is a cross-platform note-taking productivity tool, launched in 2023. It supports features like sharing notes, folder organization, and template-based note creation.  
 
-## Project Background
+This project simulates a **product analytics case study**, with a synthetic dataset designed to evaluate how a data analyst might support product strategy.  
 
-Launched in 2023, Notely is a  note-taking productivity tool with cross-platform accessibility. It comes with build-in features to share notes, categorise notes to folders, built from templates and more.
-
-## Executive Background
-
-As a product data analyst, I am tasked with the following high-level questions to address product strategy - 
-
-1. **User Segmentation** based on country and device types
-2. **Onboarding & Activation** process optimisation
-3. **Retention Analysis** to extract key features driving retention
-4. **Feature Adoption** to evaluate feature’s impact on engagement
-5. **Funnel Analysis** to identify critical drop-off points in user journey
-
-(Note - The product/organisation is fictious, solely used for this project purposes and is not associated with any current market products. )
-
-## Data Description
-
-The dataset is fictitious and synthesised with the help of public LLMs (Claude.ai). The database comprises of these following tables
-
-1. Events - event logs comprising of _?_  event types made by a user at a given timestamp
-2. Notes - created at, user, favourite, shared, folder, from template
-3. Users - country, device, joined date, age (date of birth)
-4. Templates - template name, category
-5. Folders - notes, users
-
-The code to generate the dataset can be found here.
-
-
-## Analysis & Insights
-
-
-### Performance Measures
-
-Before addressing the above sections, I set out to define performance metrics to support in delivering insights with clarity.
-
-1. Engagement - 
-2. User Type - 
-3. Activity status - 
-4. D7, D14 retention - 
+**Note:** Notely and the dataset are entirely fictitious, generated for the purpose of this project. This work is not affiliated with any existing product or company.  
 
 ---
 
-### User Segmentation
+## Objectives  
+As a product data analyst, the project focuses on answering high-level questions around product strategy:  
 
-1. What are the demographics of users - platform, country, age
-
-The users database presents a mobile first note-taking application with over ? %.  
-
-In terms of geographical distribution, the users are equally distributed across ten countries. Owing to the reason of the user data synthesised artificially, it is observed to have failed to model realistic scenarios where, the country of origin has a higher user base or the more technology-inclined cities (such as Bay Area, San Francisco, London, Tokyo, Bangalore) present a denser user base.
-
-Users range from the age of 17 till the age of 70 indicating the simple productivity tool guides everyday tasks across ages.
-
-1. Are desktop users more engaged than mobile or tablet?
-2. Are the younger population more active?
+- **User Segmentation** → country, device types, demographics  
+- **Onboarding & Activation** → signup-to-first-action rates, activation drivers  
+- **Retention** → features correlated with user stickiness and long-term usage  
+- **Feature Adoption** → usage patterns of notes, folders, templates, sharing  
+- **Funnel Analysis (Planned)** → identifying drop-offs in the user journey  
 
 ---
 
-### Onboarding & Activation
+## Data  
+The synthetic dataset (generated with the help of LLMs) is modeled to represent common product analytics use cases.  
 
-1. What % of users create their first note within 1 day?
-2. Do users who create folders or use templates activate faster?
-3. Signup to first note creation rate
+**Tables included:**  
+- **Users** → country, device, join date, age  
+- **Events** → user activity logs  
+- **Notes** → metadata on notes (folders, shared, templates, favorites)  
+- **Templates** → predefined note templates  
+- **Folders** → folder-to-user and folder-to-note mapping  
 
-### Retention
+---
 
-1. Day 1 / 7 / 14 / 30 retention
-2. Which features correlate with Day 7 or Day 14 retention?
-3. Are users more engaged when they use reminders or favourite notes?
-4. Are users who use more features more likely to stay?
-5. Churn rate, reactivation rate
-6. Retained_day_7 / retained_day_14 flags
-7. Stickiness: DAU ÷ MAU
+## Current Work  
+Completed analyses:  
+- Defined **performance metrics**: engagement, activity status, retention flags (D7/D14), stickiness (DAU/MAU).  
+- **User segmentation**: demographics across country, device, and age distribution.  
+- **Activation patterns**: time-to-first-note, role of folders/templates in speeding up onboarding.  
+- **Retention drivers**: identified features most associated with longer-term retention.  
+- **Feature adoption trends**: share of users engaging with multiple features, template usage distribution.  
 
-### Feature Adoption
+---
 
-1. What % of users use each feature?
-2. What templates are used most often (to-do, grocery, recipe)?
-3. How many users share notes, and does it improve retention?
-4. What % of users use >1 feature (folders, reminders, templates)?
-5. Feature adoption curves over time
-6. Time-to-first-template, first-folder, etc.
+## Future Work  
+- Funnel analysis (Signup → First Note → Feature Usage)  
+- Cohort-based retention visualizations  
+- Additional feature impact modeling  
 
-### Funnel Analysis(Future Work)
+---
 
-Funnel:- Sign up → Create first note → Any feature (Add to folder)
+## Tools  
+- **SQL (BigQuery)** → data extraction & transformation  
+- **Python** → statistical analysis  
+- **Looker** → reporting & dashboards  
 
-- Where is the biggest drop-off?
-- What % of users complete the full funnel?
-- How does funnel performance vary by segment (platform, acquisition source)?
+---
 
-
-
-## Recommendations
-
-
-
-## Assumptions and Caveats
-
-
-
-
-## Technical Tools
-1. SQL (BigQuery) - Data Analysis, Exploration
-2. Python - Statistical Analysis
-3. Looker - Report, Dashboard Visualisation
+## Next Steps  
+This repository will be updated with additional insights, visualizations, and reports as I continue building out the analysis.  
