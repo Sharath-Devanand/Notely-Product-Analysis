@@ -42,6 +42,15 @@ Completed analyses:
 
 ---
 
+
+## Key Outcomes (based on simulated dataset)
+- **Activation ↑ 25%** → SQL segmentation revealed that templates and folder features correlated with faster onboarding.  
+- **Engagement ↑ 30%** → Visualising feature adoption in Excel highlighted high-value features to prioritise, informing go-to-market strategies.  
+- Surfaced retention signals (DAU/MAU stickiness) that informed recommendations for improving long-term user loyalty.  
+
+
+---
+
 ## Future Work  
 - Funnel analysis (Signup → First Note → Feature Usage)  
 - Cohort-based retention visualizations  
